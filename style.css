@@ -1,0 +1,78 @@
+.container1 {
+  background-color: #333;
+  border: 3px solid red;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 50px auto 10%;
+  grid-template-rows: 70% 30%;
+  height: 35vh;
+  gap: 5px;
+}
+.container1 div {
+  background-color: #ccc;
+  padding: 20px;
+  border: 1px solid blue;
+}
+
+.container2 {
+  background-color: #333;
+  border: 3px solid red;
+  padding: 15px;
+  display: grid;
+  gap: 5px;
+  grid-template-areas: "header header header header" "sidebar content content content" "footer footer footer footer";
+}
+.container2 #header {
+  grid-area: header;
+}
+.container2 #sidebar {
+  grid-area: sidebar;
+  height: 50vh;
+}
+.container2 #content {
+  grid-area: content;
+  height: 50vh;
+}
+.container2 #footer {
+  grid-area: footer;
+}
+.container2 div {
+  background-color: #ccc;
+  padding: 20px;
+  border: 1px solid blue;
+}
+
+.container3 {
+  background-color: #333;
+  border: 3px solid red;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 3;
+}
+.container3 div {
+  background-color: #ccc;
+  padding: 20px;
+  border: 1px solid blue;
+}
+.container3 #item-1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.container3 #item-2 {
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.container3 #item-3 {
+  justify-self: end;
+  height: 200px;
+}
+.container3 #item-5 {
+  justify-self: start;
+  height: 200px;
+}
+.container3 #item-4 {
+  align-self: center;
+}
+.container3 #item-6 {
+  align-self: end;
+}/*# sourceMappingURL=style.css.map */
